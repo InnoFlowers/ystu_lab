@@ -13,7 +13,7 @@ namespace Calculator
             Console.WriteLine("Enter second number:");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Enter operation (+, -, *, /):");
+            Console.WriteLine("Enter operation (+, -, *, /, ^):");
             string operation = Console.ReadLine();
 
             double result = 0;
@@ -39,6 +39,9 @@ namespace Calculator
                         Console.WriteLine("Error: Division by zero is not allowed.");
                         return;
                     }
+                    break;
+                case "^":
+                    result = Math.Pow(num1, num2);
                     break;
                 default:
                     Console.WriteLine("Invalid operation");
