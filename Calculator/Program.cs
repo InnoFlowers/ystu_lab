@@ -30,7 +30,15 @@ namespace Calculator
                     result = num1 * num2;
                     break;
                 case "/":
-                    result = num1 / num2;
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: Division by zero is not allowed.");
+                        return;
+                    }
                     break;
                 default:
                     Console.WriteLine("Invalid operation");
