@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+*.csproj
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build Results
+[Bb]in/
+[Oo]bj/
+
+# System files
+Thumbs.db
+ehthumbs.db
